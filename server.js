@@ -1,8 +1,7 @@
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
-const teamRoutes = require("./routes/TeamRoutes");
-const myTeamRoutes = require("./routes/MyTeams");
+
 // const loginRoutes = require("./routes/login");
 // Defining Passport here! 
 // const passport = require("./client/src/middleware/passport");
@@ -27,8 +26,7 @@ if (process.env.NODE_ENV === "production") {
 // app.use(passport.session());
 
 // Define API routes here
-app.use(teamRoutes);
-app.use(myTeamRoutes);
+
 // app.use(loginRoutes);
 
 
