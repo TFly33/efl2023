@@ -4,41 +4,29 @@
   "description": "Mern Demo",
   "main": "server.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "if-env NODE_ENV=production && yarn start:prod || yarn start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"yarn client\"",
+    "client": "cd client && yarn start",
+    "install": "cd client && yarn",
+    "build": "cd client && yarn build",
+    "heroku-postbuild": "yarn build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.0.1",
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22"
   },
   "dependencies": {
-    "@auth0/auth0-spa-js": "^1.6.1",
-    "@okta/oidc-middleware": "^5.1.0",
-    "@okta/okta-react": "^1.3.1",
-    "@types/mysql": "^2.15.8",
     "axios": "^1.4.0",
     "bootstrap": "^4.4.1",
-    "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "fs": "0.0.1-security",
     "if-env": "^1.0.4",
     "mdbreact": "^5.2.0",
-    "mongoose": "^5.8.7",
-    "mysql": "^2.17.1",
-    "passport": "^0.6.0",
-    "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-router-dom": "^5.1.2",
-    "sequelize": "^6.31.1"
+    "react-router-dom": "^5.1.2"
   }
 }
