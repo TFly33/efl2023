@@ -28,11 +28,11 @@ class neptune extends React.Component {
         sabres: "",
         totalNHL: "",
         // Golf here
-        spieth: "",
-        ancer: "",
-        zalatoris: "",
-        matsuyama: "",
-        fleetwood: "",
+        schauffele: "",
+        scheffler: "",
+        cantlay: "",
+        woods: "",
+        herbert: "",
         totalGolf: "",
         // MLB Here
         orioles: "",
@@ -101,12 +101,12 @@ class neptune extends React.Component {
     getScoresPGA = () => {
         var x = golfHelper();
         Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
-        this.setState({ ancer: x.Ancer });
-        this.setState({ spieth: x.Spieth });
-        this.setState({ zalatoris: x.Zalatoris });
-        this.setState({ matsuyama: x.Matsuyama });
-        this.setState({ fleetwood: x.Fleetwood });
-        var allGolf = x.Fleetwood + x.Zalatoris + x.Spieth + x.Matsuyama + x.Ancer;
+        this.setState({ scheffler: x.Scheffler });
+        this.setState({ schauffele: x.Schauffele });
+        this.setState({ cantlay: x.Cantlay });
+        this.setState({ woods: x.Woods });
+        this.setState({ herbert: x.Herbert });
+        var allGolf = x.Herbert + x.Cantlay + x.Schauffele + x.Woods + x.Scheffler;
         this.setState({ totalGolf: allGolf });
     }
 
@@ -541,35 +541,35 @@ class neptune extends React.Component {
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th scope="col-6">Draft Pick</th>
-                                                <th scope="col-6">Golfer</th>
+                                                <th scope="col-6">Golfer (Drop Lowest Two)</th>
                                                 <th scope="col-6">Points</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">27</th>
-                                                <td className="senators">Jordan Spieth</td>
-                                                <td>{this.state.spieth}</td>
+                                                <th scope="row">49</th>
+                                                <td className="rockies">Scottie Scheffler</td>
+                                                <td>{this.state.scheffler}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">58</th>
-                                                <td className="senators">Abraham Ancer</td>
-                                                <td>{this.state.ancer}</td>
+                                                <th scope="row">52</th>
+                                                <td className="eagles">Xander Schauffele</td>
+                                                <td>{this.state.schauffele}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">70</th>
-                                                <td className="senators">Will Zalatoris</td>
-                                                <td>{this.state.zalatoris}</td>
+                                                <td className="flyers">Patrick Cantlay</td>
+                                                <td>{this.state.cantlay}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">71</th>
-                                                <td className="senators">Hideki Matsuyama</td>
-                                                <td>{this.state.matsuyama}</td>
+                                                <th scope="row">176</th>
+                                                <td className="phillies">Tiger Woods</td>
+                                                <td>{this.state.woods}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">188</th>
-                                                <td className="senators">Tommy Fleetwood</td>
-                                                <td>{this.state.fleetwood}</td>
+                                                <th scope="row">183</th>
+                                                <td className="cubs">Lucas Herbert</td>
+                                                <td>{this.state.herbert}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Total</th>

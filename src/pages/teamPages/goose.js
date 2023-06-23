@@ -26,10 +26,10 @@ class goose extends React.Component {
         blackhawks: "",
         bruins: "",
         // Golf here
-        thomas: "",
+        im: "",
         hovland: "",
-        oosthuizen: "",
-        harman: "",
+        pereira: "",
+        power: "",
         grillo: "",
         totalGolf: "",
         // MLB Here
@@ -98,11 +98,11 @@ class goose extends React.Component {
         var x = golfHelper();
         Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
         this.setState({ hovland: x.Hovland });
-        this.setState({ thomas: x.Thomas });
-        this.setState({ oosthuizen: x.Oosthuizen });
-        this.setState({ harman: x.Harman });
+        this.setState({ im: x.Im });
+        this.setState({ pereira: x.Pereira });
+        this.setState({ power: x.Power });
         this.setState({ grillo: x.Grillo });
-        var allGolf = x.Grillo + x.Hovland + x.Oosthuizen + x.Harman + x.Thomas;
+        var allGolf = x.Grillo + x.Hovland + x.Pereira + x.Power + x.Im;
         this.setState({ totalGolf: allGolf });
     }
 
@@ -530,28 +530,28 @@ class goose extends React.Component {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">11</th>
-                                                <td className="senators">Justin Thomas</td>
-                                                <td>{this.state.thomas}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">29</th>
-                                                <td className="senators">Viktor Hovland</td>
+                                                <th scope="row">102</th>
+                                                <td className="reds">Viktor Hovland</td>
                                                 <td>{this.state.hovland}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">54</th>
-                                                <td className="senators">Louis Oosthuizen</td>
-                                                <td>{this.state.oosthuizen}</td>
+                                                <th scope="row">131</th>
+                                                <td className="cubs">Sung-jae Im</td>
+                                                <td>{this.state.im}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">174</th>
-                                                <td className="senators">Brian Harman</td>
-                                                <td>{this.state.harman}</td>
+                                                <th scope="row">170</th>
+                                                <td className="eagles">Mito Pereira</td>
+                                                <td>{this.state.pereira}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">181</th>
-                                                <td className="senators">Emiliano Grillo</td>
+                                                <th scope="row">171</th>
+                                                <td className="kings">Seamus Power</td>
+                                                <td>{this.state.power}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">188</th>
+                                                <td className="cowboys">Emiliano Grillo</td>
                                                 <td>{this.state.grillo}</td>
                                             </tr>
                                             <tr>

@@ -27,11 +27,11 @@ class patrick extends React.Component {
         pacers: "",
         totalNHL: "",
         // Golf here
-        rahm: "",
-        johnson: "",
-        berger: "",
-        champ: "",
-        wolff: "",
+        zalatoris: "",
+        thomas: "",
+        young: "",
+        theegala: "",
+        riley: "",
         totalGolf: "",
         // MLB Here
         dodgers: "",
@@ -97,12 +97,12 @@ class patrick extends React.Component {
     getScoresPGA = () => {
         var x = golfHelper();
         Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
-        this.setState({ johnson: x.Johnson });
-        this.setState({ rahm: x.Rahm });
-        this.setState({ berger: x.Berger });
-        this.setState({ champ: x.Champ });
-        this.setState({ wolff: x.Wolff });
-        var allGolf = x.Rahm + x.Johnson + x.Berger + x.Champ + x.Wolff;
+        this.setState({ thomas: x.Thomas });
+        this.setState({ zalatoris: x.Zalatoris });
+        this.setState({ young: x.Young });
+        this.setState({ theegala: x.Theegala });
+        this.setState({ riley: x.Riley });
+        var allGolf = x.Zalatoris + x.Thomas + x.Young + x.Theegala + x.Riley;
         this.setState({ totalGolf: allGolf });
     }
 
@@ -536,29 +536,29 @@ class patrick extends React.Component {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">5</th>
-                                                <td className="senators">Jon Rahm</td>
-                                                <td>{this.state.rahm}</td>
+                                                <th scope="row">66</th>
+                                                <td className="jaguars">Justin Thomas</td>
+                                                <td>{this.state.zalatoris}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">16</th>
-                                                <td className="senators">Dustin Johnson</td>
-                                                <td>{this.state.johnson}</td>
+                                                <th scope="row">121</th>
+                                                <td className="cubs">Will Zalatoris</td>
+                                                <td>{this.state.thomas}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">68</th>
-                                                <td className="senators">Daniel Berger</td>
-                                                <td>{this.state.berger}</td>
+                                                <th scope="row">140</th>
+                                                <td className="rockies">Cameron Young</td>
+                                                <td>{this.state.young}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">101</th>
-                                                <td className="senators">Matthew Wolff</td>
-                                                <td>{this.state.wolff}</td>
+                                                <th scope="row">145</th>
+                                                <td className="mariners">Sahith Theegala</td>
+                                                <td>{this.state.riley}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">165</th>
-                                                <td className="senators">Cameron Champ</td>
-                                                <td>{this.state.champ}</td>
+                                                <th scope="row">156</th>
+                                                <td className="cowboys">Davis Riley</td>
+                                                <td>{this.state.theegala}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Total</th>

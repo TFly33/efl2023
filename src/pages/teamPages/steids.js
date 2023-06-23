@@ -27,11 +27,11 @@ class steids extends React.Component {
         leafs: "",
         totalNHL: "",
         // Golf here
-        english: "",
-        burns: "",
-        conners: "",
-        kokrak: "",
-        kim: "",
+        berger: "",
+        homa: "",
+        straka: "",
+        henley: "",
+        fowler: "",
         totalGolf: "",
         // MLB Here
         padres: "",
@@ -101,12 +101,12 @@ class steids extends React.Component {
     getScoresPGA = () => {
         var x = golfHelper();
         Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
-        this.setState({ burns: x.Burns });
-        this.setState({ english: x.English });
-        this.setState({ conners: x.Conners });
-        this.setState({ kokrak: x.Kokrak });
-        this.setState({ kim: x.Kim });
-        var allGolf = x.Kim + x.Burns + x.English + x.Kokrak + x.Conners;
+        this.setState({ homa: x.Homa });
+        this.setState({ berger: x.Berger });
+        this.setState({ straka: x.Straka });
+        this.setState({ henley: x.Henley });
+        this.setState({ fowler: x.Fowler });
+        var allGolf = x.Fowler + x.Homa + x.Berger + x.Henley + x.Straka;
         this.setState({ totalGolf: allGolf });
     }
 
@@ -536,35 +536,35 @@ class steids extends React.Component {
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th scope="col-6">Draft Pick</th>
-                                                <th scope="col-6">Golfer</th>
+                                                <th scope="col-6">Golfer (Drop Two Worst)</th>
                                                 <th scope="col-6">Points</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">48</th>
-                                                <td className="senators">Harris English</td>
-                                                <td>{this.state.english}</td>
+                                                <th scope="row">84</th>
+                                                <td className="bills">Max Homa</td>
+                                                <td>{this.state.homa}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">74</th>
-                                                <td className="senators">Sam Burns</td>
-                                                <td>{this.state.burns}</td>
+                                                <th scope="row">125</th>
+                                                <td className="mariners">Daniel Berger</td>
+                                                <td>{this.state.berger}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">87</th>
-                                                <td className="senators">Corey Conners</td>
-                                                <td>{this.state.conners}</td>
+                                                <th scope="row">149</th>
+                                                <td className="rockies">Sepp Straka</td>
+                                                <td>{this.state.straka}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">134</th>
-                                                <td className="senators">Jason Kokrak</td>
-                                                <td>{this.state.kokrak}</td>
+                                                <th scope="row">152</th>
+                                                <td className="steelers">Russell Henley</td>
+                                                <td>{this.state.henley}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">168</th>
-                                                <td className="senators">Si Woo Kim</td>
-                                                <td>{this.state.kim}</td>
+                                                <th scope="row">180</th>
+                                                <td className="bills">Rickie Fowler</td>
+                                                <td>{this.state.fowler}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Total</th>

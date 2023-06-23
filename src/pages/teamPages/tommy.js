@@ -29,11 +29,11 @@ class tommy extends React.Component {
         canadians: "",
         totalNHL: "",
         // Golf here
-        schauffele: "",
-        niemann: "",
+        fitzpatrick: "",
+        finau: "",
         mcnealy: "",
-        henley: "",
-        tringale: "",
+        kim: "",
+        bradley: "",
         totalGolf: "",
         // MLB Here
         rays: "",
@@ -63,12 +63,12 @@ class tommy extends React.Component {
     getScoresPGA = () => {
         var x = golfHelper();
         Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
-        this.setState({ niemann: x.Niemann });
-        this.setState({ schauffele: x.Schauffele });
-        this.setState({ mcnealy: x.Mcnealy });
-        this.setState({ henley: x.Henley });
-        this.setState({ tringale: x.Tringale });
-        var allGolf = x.Tringale + x.Niemann + x.Schauffele + x.Henley + x.Niemann;
+        this.setState({ finau: x.Finau });
+        this.setState({ fitzpatrick: x.Fitzpatrick });
+        this.setState({ mcnealy: x.McNealy });
+        this.setState({ kim: x.Kim });
+        this.setState({ bradley: x.Bradley });
+        var allGolf = x.McNealy + x.Finau + x.Fitzpatrick + x.Kim + x.Bradley;
         this.setState({ totalGolf: allGolf });
     }
 
@@ -541,35 +541,35 @@ class tommy extends React.Component {
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th scope="col-6">Draft Pick</th>
-                                                <th scope="col-6">Golfer</th>
+                                                <th scope="col-6">Golfer (Drop Two Worst)</th>
                                                 <th scope="col-6">Points</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">12</th>
-                                                <td className="canadians">Xander Schauffele</td>
-                                                <td>{this.state.schauffele}</td>
+                                                <th scope="row">91</th>
+                                                <td className="canadiens">Tony Finau</td>
+                                                <td>{this.state.finau}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">112</th>
-                                                <td className="canadians">Joaquin Niemann</td>
-                                                <td>{this.state.niemann}</td>
+                                                <th scope="row">122</th>
+                                                <td className="mariners">Matt Fitzpatrick</td>
+                                                <td>{this.state.fitzpatrick}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">139</th>
+                                                <td className="ravens">Tom Kim</td>
+                                                <td>{this.state.kim}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">141</th>
-                                                <td className="canadians">Maverick McNealy</td>
-                                                <td>{this.state.mcnealy}</td>
+                                                <td className="colts">Keegan Bradley</td>
+                                                <td>{this.state.bradley}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">163</th>
-                                                <td className="canadians">Russell Henley</td>
-                                                <td>{this.state.henley}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">178</th>
-                                                <td className="canadians">Cameron Tringale</td>
-                                                <td>{this.state.tringale}</td>
+                                                <td className="canadiens">Maverick McNealy</td>
+                                                <td>{this.state.mcnealy}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Total</th>
