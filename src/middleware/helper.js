@@ -4,75 +4,75 @@ export const golfHelper = () => {
     let x = {
 
         // Neptune
-        "Scheffler": 2640,
-        "Schauffele": 1233,
-        "Cantlay": 1244,
+        "Scheffler": 2850,
+        "Schauffele": 1298,
+        "Cantlay": 1306,
         "Woods": 11,
         "Herbert": 142,
 
         // Al
-        "Rahm": 3042,
-        "Morikawa": 940,
-        "Conners": 940, 
-        "Harman": 844,
+        "Rahm": 3117,
+        "Morikawa": 1001,
+        "Conners": 981, 
+        "Harman": 857,
         "Davis": 466,
 
 
         // Eres
-        "Mcilroy": 1207,
+        "Mcilroy": 1612,
         "Spieth": 1063,
-        "Matsuyama": 572,
-        "Lowry": 402,
+        "Matsuyama": 596,
+        "Lowry": 417,
         "Simpson": 140,
 
         // Pat/JP
         "Thomas": 469,
         "Zalatoris": 244,
-        "Young": 684,
-        "Theegala": 1009,
+        "Young": 713,
+        "Theegala": 1058,
         "Riley": 719, 
 
         // SAT
         "Homa": 1955,
         "Berger": 0,
         "Straka": 692,
-        "Henley": 928,
-        "Fowler": 1017,
+        "Henley": 990,
+        "Fowler": 1127,
 
         // Tommy
-        "Finau": 1536,
-        "Fitzpatrick": 930,
-        "Kim": 1028,
+        "Finau": 1560,
+        "Fitzpatrick": 1027,
+        "Kim": 1119,
         "Bradley": 1233,
         "McNealy": 414,
 
         // Goose
-        "Hovland": 1623,
+        "Hovland": 1676,
         "Im": 937,
         "Pereira": 236,
         "Power": 1077,
         "Grillo": 1048,
 
         // James
-        "Burns": 1218,
-        "Horschel":281, 
-        "Hatton":1068,
-        "Fleetwood": 611,
+        "Burns": 1242,
+        "Horschel":294, 
+        "Hatton":1247,
+        "Fleetwood": 1021,
         "Wise": 289,
 
 
         // DJ
-        "English": 797,
-        "SiWoo": 1333,
+        "English": 888,
+        "SiWoo": 1351,
         "Scott": 452,
         "Champ": 183,
-        "Rose": 1003,
+        "Rose": 1088,
 
 
         // Big Dog
         "Hoge": 811,
-        "Hughes": 858,
-        "Putnam": 850,
+        "Hughes": 867,
+        "Putnam": 862,
         "Day": 1293,
         "Griffin": 529, 
 
