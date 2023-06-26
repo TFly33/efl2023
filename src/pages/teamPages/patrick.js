@@ -538,12 +538,12 @@ class patrick extends React.Component {
                                             <tr>
                                                 <th scope="row">66</th>
                                                 <td className="jaguars">Justin Thomas</td>
-                                                <td>{this.state.zalatoris}</td>
+                                                <td>{this.state.thomas}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">121</th>
                                                 <td className="cubs">Will Zalatoris</td>
-                                                <td>{this.state.thomas}</td>
+                                                <td>{this.state.zalatoris}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">140</th>
