@@ -102,8 +102,11 @@ class patrick extends React.Component {
         this.setState({ young: x.Young });
         this.setState({ theegala: x.Theegala });
         this.setState({ riley: x.Riley });
-        var allGolf = x.Zalatoris + x.Thomas + x.Young + x.Theegala + x.Riley;
-        this.setState({ totalGolf: allGolf });
+        const arr = [1, 2, 3, 4, 5]
+        var allGolfArr = x.Zalatoris + x.Thomas + x.Young + x.Theegala + x.Riley;
+        arr.sort(allGolfArr).slice(-3).reduce((partialSum, a) => partialSum + a, 0)
+        console.log(allGolfArr);
+        this.setState({ totalGolf: allGolfArr });
     }
 
 
