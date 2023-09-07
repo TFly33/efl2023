@@ -50,9 +50,9 @@ class joe extends React.Component {
     getScoresNFL = () => {
         var x = golfHelper();
         this.setState({ seahawks: x.Seahawks });
-        this.setState({ bengals: x.Bengals });
+        this.setState({ colts: x.Colts });
         this.setState({ raiders: x.Raiders });
-        var allNFL = (x.Seahawks + x.Bengals + x.Raiders)
+        var allNFL = (x.Seahawks + x.Colts + x.Raiders)
         this.setState({ totalNFL: allNFL });
     };
 
@@ -382,17 +382,17 @@ class joe extends React.Component {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">50</th>
+                                                <th scope="row">94</th>
                                                 <td className="seahawks">Seattle Seahawks</td>
                                                 <td>{this.state.seahawks}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">103</th>
-                                                <td className="bengals">Cincinnati Bengals</td>
-                                                <td>{this.state.bengals}</td>
+                                                <th scope="row">104</th>
+                                                <td className="colts">Indianapolis Colts</td>
+                                                <td>{this.state.colts}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">128</th>
+                                                <th scope="row">117</th>
                                                 <td className="raiders">Las Vegas Raiders</td>
                                                 <td>{this.state.raiders}</td>
                                             </tr>
@@ -540,12 +540,12 @@ class joe extends React.Component {
                                             <tr>
                                                 <th scope="row">146</th>
                                                 <td className="cubs">Tom Hoge</td>
-                                                <td>{this.state.hughes}</td>
+                                                <td>{this.state.hoge}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">155</th>
                                                 <td className="mariners">Mackenzie Hughes</td>
-                                                <td>{this.state.hoge}</td>
+                                                <td>{this.state.hughes}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">168</th>

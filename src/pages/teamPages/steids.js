@@ -50,10 +50,10 @@ class steids extends React.Component {
 
     getScoresNFL = () => {
         var x = golfHelper();
-        this.setState({ panthers: x.Panthers });
-        this.setState({ bears: x.Bears });
-        this.setState({ ravens: x.Ravens });
-        var allNFL = (x.Panthers + x.Bears + x.Ravens)
+        this.setState({ bills: x.Bills });
+        this.setState({ jets: x.Jets });
+        this.setState({ steelers: x.Steelers });
+        var allNFL = (x.Bills + x.Jets + x.Steelers)
         this.setState({ totalNFL: allNFL });
     }
 
@@ -371,7 +371,7 @@ class steids extends React.Component {
                         </div>
 
                         {/* Here is NFL */}
-                        {/* <div class="container smallTable">
+                        <div class="container smallTable">
                             <div class="row">
                                 <div class="col">
                                     <table class="table table-striped table-bordered table-hover">
@@ -384,19 +384,19 @@ class steids extends React.Component {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">26</th>
-                                                <td className="ravens">Baltimore Ravens</td>
-                                                <td>{this.state.ravens}</td>
+                                                <th scope="row">4</th>
+                                                <td className="bills">Buffalo Bills</td>
+                                                <td>{this.state.bills}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">117</th>
-                                                <td className="bears">Chicago Bears</td>
-                                                <td>{this.state.bears}</td>
+                                                <th scope="row">97</th>
+                                                <td className="jets">New York Jets</td>
+                                                <td>{this.state.jets}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">127</th>
-                                                <td className="panthers">Carolina Panthers</td>
-                                                <td>{this.state.panthers}</td>
+                                                <th scope="row">116</th>
+                                                <td className="steelers">Pittsburgh Steelers</td>
+                                                <td>{this.state.steelers}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Total</th>
@@ -407,7 +407,7 @@ class steids extends React.Component {
                                     </table>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
 
                         <div class="container smallTable">

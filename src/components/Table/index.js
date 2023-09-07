@@ -435,42 +435,42 @@ class Table extends Component {
     getScoresNFL = () => {
         var x = golfHelper();
         // Tom
-        var tomFootball = (x.Chiefs + x.Saints + x.Vikings)
+        var tomFootball = (x.Eagles + x.Cowboys + x.Buccaneers)
         this.setState({ tomNFL: tomFootball });
         // Pat
-        var patFootball = (x.Buccaneers + x.Jets + x.Jaguars)
+        var patFootball = (x.Bengals + x.Cardinals + x.Lions)
         this.setState({ patNFL: patFootball });
         var patFootballFixed = parseInt((patFootball));
         this.setState({ patFixedFootball: patFootballFixed });
         // James
-        var jamesFootball = (x.Rams + x.Browns + x.Steelers)
+        var jamesFootball = (x.Chargers + x.Saints + x.Jaguars)
         this.setState({ jamesNFL: jamesFootball });
         // Neptune
-        var neptuneFootball = (x.Colts + x.Cardinals + x.Patriots)
+        var neptuneFootball = (x.Giants + x.Falcons + x.Bears)
         this.setState({ neptuneNFL: neptuneFootball });
         var neptuneFootballFixed = parseInt((neptuneFootball));
         this.setState({ neptuneFixedFootball: neptuneFootballFixed })
         // DJ
-        var djFootball = (x.Packers + x.Titans + x.Falcons)
+        var djFootball = (x.FortyNiners + x.Vikings + x.Pats)
         this.setState({ djNFL: djFootball });
         // Goose
-        var gooseFootball = (x.Bills + x.Eagles + x.Giants)
+        var gooseFootball = (x.Packers + x.Rams + x.Titans)
         this.setState({ gooseNFL: gooseFootball });
         // AL
-        var alFootball = (x.FortyNiners + x.Broncos + x.Dolphins)
+        var alFootball = (x.Browns + x.Commanders + x.Dolphins)
         this.setState({ alNFL: alFootball });
         var alFootballFixed = parseInt((alFootball));
         this.setState({ alFixedFootball: alFootballFixed })
         // Joe
-        var joeFootball = (x.Seahawks + x.Bengals + x.Raiders)
+        var joeFootball = (x.Seahawks + x.coyotesOTLS + x.Raiders)
         this.setState({ joeNFL: joeFootball });
         // Steids
-        var steidsFootball = (x.Panthers + x.Bears + x.Ravens)
+        var steidsFootball = (x.Bills + x.Jets+ x.Steelers)
         this.setState({ steidsNFL: steidsFootball });
         var steidsFootballFixed = parseInt((steidsFootball));
         this.setState({ steidsFixedFootball: steidsFootballFixed })
         // Eres 
-        var eresFootball = (x.Cowboys + x.Chargers + x.Commanders)
+        var eresFootball = (x.Chiefs + x.Ravens + x.Broncos)
         this.setState({ eresNFL: eresFootball });
     };
 
@@ -478,43 +478,43 @@ class Table extends Component {
         var x = golfHelper();
         Object.keys(x).forEach((key) => { x[key] = x[key] / 20 });
         // Al
-        var alGolf = (x.Rahm + x.Morikawa + x.Conners + x.Harman + x.Davis).toFixed(0);
+        var alGolf = (x.Rahm + x.Morikawa + x.Harman).toFixed(0);
         // No score removed.
         this.setState({ alPGA: alGolf });
         // Tom
-        var tomGolf = (x.Finau + x.Fitzpatrick + x.Kim + x.Bradley + x.McNealy).toFixed(0);
+        var tomGolf = (x.Finau + x.Kim + x.Bradley).toFixed(0);
         // Henley removed for lowest score. 
         this.setState({ tomPGA: tomGolf });
         // Goose
-        var gooseGolf = (x.Hovland + x.Im + x.Pereira + x.Power + x.Grillo).toFixed(0);
+        var gooseGolf = (x.Hovland + x.Power + x.Grillo).toFixed(0);
         // Oosthuizen removed for lowest score
         this.setState({ goosePGA: gooseGolf });
         // James
-        var jamesGolf = (x.Burns + x.Horschel + x.Hatton + x.Fleetwood + x.Wise).toFixed(0);
+        var jamesGolf = (x.Burns + x.Hatton + x.Fleetwood).toFixed(0);
         // Na removed for lowest score
         this.setState({ jamesPGA: jamesGolf });
         // Joe
-        var joeGolf = (x.Hoge + x.Hughes + x.Putnam + x.Day + x.Griffin).toFixed(0);
+        var joeGolf = (x.Hoge + x.Putnam + x.Day).toFixed(0);
         // Bryson removed for lowest score
         this.setState({ joePGA: joeGolf });
         // Neptune
-        var neptuneGolf = (x.Scheffler + x.Schauffele + x.Cantlay + x.Woods + x.Herbert).toFixed(0);
+        var neptuneGolf = (x.Scheffler + x.Schauffele + x.Cantlay).toFixed(0);
         // Ancer removed for lowest score
         this.setState({ neptunePGA: neptuneGolf });
         // Patrick
-        var patGolf = (x.Thomas + x.Zalatoris + x.Young + x.Theegala + x.Riley).toFixed(0);
+        var patGolf = (x.Young + x.Theegala + x.Riley).toFixed(0);
         // Dustin Johnson removed for lowest score
         this.setState({ patPGA: patGolf });
         // Steids
-        var steidsGolf = (x.Homa + x.Berger + x.Straka + x.Henley + x.Fowler).toFixed(0);
+        var steidsGolf = (x.Homa + x.Straka + x.Fowler).toFixed(0);
         // Harris English removed for lowest Score
         this.setState({ steidsPGA: steidsGolf });
         // DJ
-        var djGolf = (x.English + x.SiWoo + x.Scott + x.Champ + x.Rose).toFixed(0);
+        var djGolf = (x.English + x.SiWoo + x.Rose).toFixed(0);
         // Sergio removed for lowest score
         this.setState({ djPGA: djGolf });
         // Eres
-        var eresGolf = (x.Mcilroy + x.Spieth + x.Matsuyama + x.Lowry + x.Simpson).toFixed(0);
+        var eresGolf = (x.Mcilroy + x.Spieth + x.Matsuyama).toFixed(0);
         // Fowler removed for lowest score
         this.setState({ eresPGA: eresGolf });
 
