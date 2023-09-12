@@ -100,7 +100,7 @@ class dj extends React.Component {
 
     getScoresPGA = () => {
         var x = golfHelper();
-        Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
+        Object.keys(x).forEach((key) => { x[key] = x[key] / 22 })
         this.setState({ english: x.English });
         this.setState({ kim: x.Kim });
         this.setState({ scott: x.Scott });

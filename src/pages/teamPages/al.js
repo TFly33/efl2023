@@ -101,7 +101,7 @@ class al extends React.Component {
 
     getScoresPGA = () => {
         var x = golfHelper();
-        Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
+        Object.keys(x).forEach((key) => { x[key] = x[key] / 22 })
         this.setState({ rahm: x.Rahm });
         this.setState({ morikawa: x.Morikawa });
         this.setState({ conners: x.Conners });

@@ -100,7 +100,7 @@ class steids extends React.Component {
 
     getScoresPGA = () => {
         var x = golfHelper();
-        Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
+        Object.keys(x).forEach((key) => { x[key] = x[key] / 22 })
         this.setState({ homa: x.Homa });
         this.setState({ berger: x.Berger });
         this.setState({ straka: x.Straka });

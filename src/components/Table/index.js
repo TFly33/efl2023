@@ -476,7 +476,7 @@ class Table extends Component {
 
     getScoresPGA = () => {
         var x = golfHelper();
-        Object.keys(x).forEach((key) => { x[key] = x[key] / 20 });
+        Object.keys(x).forEach((key) => { x[key] = x[key] / 22 });
         // Al
         var alGolf = (x.Rahm + x.Morikawa + x.Harman).toFixed(0);
         // No score removed.

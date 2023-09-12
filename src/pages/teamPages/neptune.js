@@ -100,7 +100,7 @@ class neptune extends React.Component {
 
     getScoresPGA = () => {
         var x = golfHelper();
-        Object.keys(x).forEach((key) => { x[key] = x[key] / 20 })
+        Object.keys(x).forEach((key) => { x[key] = x[key] / 22 })
         this.setState({ scheffler: x.Scheffler });
         this.setState({ schauffele: x.Schauffele });
         this.setState({ cantlay: x.Cantlay });
