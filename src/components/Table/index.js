@@ -120,12 +120,12 @@ class Table extends Component {
                     sort: 'asc',
                     width: 150
                 },
-                // {
-                //     label: 'NFL',
-                //     field: 'nfl',
-                //     sort: 'asc',
-                //     width: 150
-                // },
+                {
+                    label: 'NFL',
+                    field: 'nfl',
+                    sort: 'asc',
+                    width: 150
+                },
                 {
                     label: 'NBA',
                     field: 'nba',
@@ -296,7 +296,7 @@ class Table extends Component {
         // Now, once the updates have applied, we call the getteams. This will show updated results. I'm gonna freeze this for the time being so I don't make a million API calls. 
         this.getScoresEPL();
         // I'm gonna run this as a function even though these are just dead numbers at this point (since the NFL regular season ended)
-        // this.getScoresNFL();
+        this.getScoresNFL();
         // running NHL here
         this.getScoresNHL();
         // MLB Here 
@@ -314,7 +314,7 @@ class Table extends Component {
             parseInt((this.state.tomNBA)) +
             parseInt((this.state.tomNHL)) +
             parseInt((this.state.tomPGA)) +
-            // parseInt((this.state.tomNFL)) +
+            parseInt((this.state.tomNFL)) +
             parseInt((this.state.tomEPL)) +
             parseInt((this.state.tomMLB))
         // Bonus
@@ -327,7 +327,7 @@ class Table extends Component {
             parseInt((this.state.patrickNBA)) +
             parseInt((this.state.patNHL)) +
             parseInt((this.state.patPGA)) +
-            // parseInt((this.state.patNFL)) +
+            parseInt((this.state.patNFL)) +
             parseInt((this.state.patEPL)) +
             parseInt((this.state.patMLB))
         // // Bonus
@@ -339,7 +339,7 @@ class Table extends Component {
             parseInt((this.state.jamesNBA)) +
             parseInt((this.state.jamesNHL)) +
             parseInt((this.state.jamesPGA)) +
-            // parseInt((this.state.jamesNFL)) +
+            parseInt((this.state.jamesNFL)) +
             parseInt((this.state.jamesEPL)) +
             parseInt((this.state.jamesMLB))
         // parseInt((this.state.jamesBonus))
@@ -351,7 +351,7 @@ class Table extends Component {
             parseInt((this.state.neptuneNBA)) +
             parseInt((this.state.neptuneNHL)) +
             parseInt((this.state.neptunePGA)) +
-            // parseInt((this.state.neptuneNFL)) +
+            parseInt((this.state.neptuneNFL)) +
             parseInt((this.state.neptuneEPL)) +
             parseInt((this.state.neptuneMLB))
         // // Bonus
@@ -363,7 +363,7 @@ class Table extends Component {
             parseInt((this.state.djNBA)) +
             parseInt((this.state.djNHL)) +
             parseInt((this.state.djPGA)) +
-            // parseInt((this.state.djNFL)) +
+            parseInt((this.state.djNFL)) +
             parseInt((this.state.djEPL)) +
             parseInt((this.state.djMLB))
         // // Bonus
@@ -375,7 +375,7 @@ class Table extends Component {
             parseInt((this.state.gooseNBA)) +
             parseInt((this.state.gooseNHL)) +
             parseInt((this.state.goosePGA)) +
-            // parseInt((this.state.gooseNFL)) +
+            parseInt((this.state.gooseNFL)) +
             parseInt((this.state.gooseEPL)) +
             parseInt((this.state.gooseMLB))
         // // Bonus
@@ -387,7 +387,7 @@ class Table extends Component {
             parseInt((this.state.alNBA)) +
             parseInt((this.state.alNHL)) +
             parseInt((this.state.alPGA)) +
-            // parseInt((this.state.alNFL)) +
+            parseInt((this.state.alNFL)) +
             parseInt((this.state.alEPL)) +
             parseInt((this.state.alMLB)) 
             // parseInt((this.state.alBonus))
@@ -399,7 +399,7 @@ class Table extends Component {
             parseInt((this.state.joeNBA)) +
             parseInt((this.state.joeNHL)) +
             parseInt((this.state.joePGA)) +
-            // parseInt((this.state.joeNFL)) +
+            parseInt((this.state.joeNFL)) +
             parseInt((this.state.joeEPL)) +
             parseInt((this.state.joeMLB))
         // parseInt((this.state.joeBonus))
@@ -410,7 +410,7 @@ class Table extends Component {
             parseInt((this.state.steidsNBA)) +
             parseInt((this.state.steidsNHL)) +
             parseInt((this.state.steidsPGA)) +
-            // parseInt((this.state.steidsNFL)) +
+            parseInt((this.state.steidsNFL)) +
             parseInt((this.state.steidsEPL)) +
             parseInt((this.state.steidsMLB))
         // parseInt((this.state.steidsBonus))
@@ -422,7 +422,7 @@ class Table extends Component {
             parseInt((this.state.eresNBA)) +
             parseInt((this.state.eresNHL)) +
             parseInt((this.state.eresPGA)) +
-            // parseInt((this.state.eresNFL)) +
+            parseInt((this.state.eresNFL)) +
             parseInt((this.state.eresEPL)) +
             parseInt((this.state.eresMLB)) 
             // parseInt((this.state.eresBonus))
@@ -435,7 +435,7 @@ class Table extends Component {
     getScoresNFL = () => {
         var x = golfHelper();
         // Tom
-        var tomFootball = (x.Eagles + x.Cowboys + x.Buccaneers)
+        var tomFootball = ((x.Eagles) + (x.Cowboys) + (x.Buccaneers))
         this.setState({ tomNFL: tomFootball });
         // Pat
         var patFootball = (x.Bengals + x.Cardinals + x.Lions)
