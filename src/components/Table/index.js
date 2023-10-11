@@ -49,16 +49,16 @@ class Table extends Component {
         steidsNFL: "",
         eresNFL: "",
         // NHL Here: 
-        tomNHL: "",
-        patNHL: "",
-        jamesNHL: "",
-        neptuneNHL: "",
-        djNHL: "",
-        gooseNHL: "",
-        alNHL: "",
-        joeNHL: "",
-        steidsNHL: "",
-        eresNHL: "",
+        tomNHL: 197,
+        patNHL: 271,
+        jamesNHL: 303,
+        neptuneNHL: 274,
+        djNHL: 306,
+        gooseNHL: 274,
+        alNHL: 291,
+        joeNHL: 309,
+        steidsNHL: 312,
+        eresNHL: 271,
         // PGA Here:
         alPGA: "",
         tomPGA: "",
@@ -438,39 +438,39 @@ class Table extends Component {
         var tomFootball = ((x.Eagles) + (x.Cowboys) + (x.Buccaneers))
         this.setState({ tomNFL: tomFootball });
         // Pat
-        var patFootball = (x.Bengals + x.Cardinals + x.Lions)
+        var patFootball = ((x.Bengals) + (x.Cardinals) + (x.Lions))
         this.setState({ patNFL: patFootball });
         var patFootballFixed = parseInt((patFootball));
         this.setState({ patFixedFootball: patFootballFixed });
         // James
-        var jamesFootball = (x.Chargers + x.Saints + x.Jaguars)
+        var jamesFootball = ((x.Chargers) + (x.Saints) + (x.Jaguars))
         this.setState({ jamesNFL: jamesFootball });
         // Neptune
-        var neptuneFootball = (x.Giants + x.Falcons + x.Bears)
+        var neptuneFootball = ((x.Giants) + (x.Falcons) + (x.Bears))
         this.setState({ neptuneNFL: neptuneFootball });
         var neptuneFootballFixed = parseInt((neptuneFootball));
         this.setState({ neptuneFixedFootball: neptuneFootballFixed })
         // DJ
-        var djFootball = (x.FortyNiners + x.Vikings + x.Pats)
+        var djFootball = ((x.FortyNiners) + (x.Vikings) + (x.Patriots))
         this.setState({ djNFL: djFootball });
         // Goose
-        var gooseFootball = (x.Packers + x.Rams + x.Titans)
+        var gooseFootball = ((x.Packers) + (x.Rams) + (x.Titans))
         this.setState({ gooseNFL: gooseFootball });
         // AL
-        var alFootball = (x.Browns + x.Commanders + x.Dolphins)
+        var alFootball = ((x.Browns) + (x.Commanders) + (x.Dolphins))
         this.setState({ alNFL: alFootball });
         var alFootballFixed = parseInt((alFootball));
         this.setState({ alFixedFootball: alFootballFixed })
         // Joe
-        var joeFootball = (x.Seahawks + x.coyotesOTLS + x.Raiders)
+        var joeFootball = ((x.Seahawks) + (x.Colts) + (x.Raiders))
         this.setState({ joeNFL: joeFootball });
         // Steids
-        var steidsFootball = (x.Bills + x.Jets+ x.Steelers)
+        var steidsFootball = ((x.Bills) + (x.Jets) + (x.Steelers))
         this.setState({ steidsNFL: steidsFootball });
         var steidsFootballFixed = parseInt((steidsFootball));
         this.setState({ steidsFixedFootball: steidsFootballFixed })
         // Eres 
-        var eresFootball = (x.Chiefs + x.Ravens + x.Broncos)
+        var eresFootball = ((x.Chiefs) + (x.Ravens) + (x.Broncos))
         this.setState({ eresNFL: eresFootball });
     };
 
@@ -1454,19 +1454,19 @@ class Table extends Component {
                 canadiansTotal = (canadiansWins * 2) + canadiansOTLS;
                 console.log(canadiansTotal);
 
-                var totalTomNHL = blueJacketsTotal + canadiansTotal + coyotesTotal
+                // var totalTomNHL = blueJacketsTotal + canadiansTotal + coyotesTotal
 
 
-                this.setState({ alNHL: totalAlNHL });
-                this.setState({ eresNHL: totalEresNHL });
-                this.setState({ djNHL: totaldjNHL });
-                this.setState({ gooseNHL: totalGooseNHL });
-                this.setState({ jamesNHL: totalJamesNHL });
-                this.setState({ joeNHL: totalJoeNHL });
-                this.setState({ neptuneNHL: totalNeptuneNHL });
-                this.setState({ patNHL: totalPatNHL });
-                this.setState({ steidsNHL: totalSteidsNHL });
-                this.setState({ tomNHL: totalTomNHL });
+                // this.setState({ alNHL: totalAlNHL });
+                // this.setState({ eresNHL: totalEresNHL });
+                // this.setState({ djNHL: totaldjNHL });
+                // this.setState({ gooseNHL: totalGooseNHL });
+                // this.setState({ jamesNHL: totalJamesNHL });
+                // this.setState({ joeNHL: totalJoeNHL });
+                // this.setState({ neptuneNHL: totalNeptuneNHL });
+                // this.setState({ patNHL: totalPatNHL });
+                // this.setState({ steidsNHL: totalSteidsNHL });
+                // this.setState({ tomNHL: totalTomNHL });
 
                 // and now I need to run the totalscore function to grab all of these inputs. 
                 this.totalScores();
