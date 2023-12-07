@@ -150,12 +150,12 @@ class Table extends Component {
                     sort: 'asc',
                     width: 150
                 },
-                // {
-                //     label: 'Bonus',
-                //     field: 'bonus',
-                //     sort: 'asc',
-                //     width: 150
-                // },
+                {
+                    label: 'Bonus',
+                    field: 'bonus',
+                    sort: 'asc',
+                    width: 150
+                },
                 {
                     label: 'Total',
                     field: 'total',
